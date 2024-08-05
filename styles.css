@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit&display=swap');
+
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    color: #292929;
+    background-color: #e0e0e0;
+}
+
+a {
+    font-size: 1.5rem;
+    line-height: 200%;
+    text-underline-position: under;
+    text-decoration-thickness: 8;
+}
+
+a:not(li > a) {
+    font-size: 1.125rem;
+}
+
+a, h1, h2, h3, li, p {
+    font-family: "Kanit", "Arial", sans-serif;
+    margin-bottom: 1rem;
+}
+
+div:has(h2 + p) {
+    margin: auto;
+    text-align: center;
+}
+
+div:has(p > em) {
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+em {
+    font-size: 1.125rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h1, h2 {
+    line-height: 150%;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h2, h3 {
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+img {
+    border-radius: 0.5rem;
+    display: block;
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+li {
+    font-size: 1.25rem;
+    line-height: 125%;
+    margin-bottom: 0.5rem;
+}
+
+li > a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li:hover > a {
+    color: #292929;
+}
+
+nav {
+    display: block;
+}
+
+nav > ol {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+nav > ol > li {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #292929;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+nav > ol > li:hover {
+    background-color: white;
+}
+
+ol, ul {
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+
+ol:not(section ol), ul:not(section ul) {
+    list-style: none;
+    padding: 1.25rem;
+}
+
+ol > li {
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #fff;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+section ol, section ul {
+    list-style-position: inside;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 900px) {
+    .grid-2-col {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
